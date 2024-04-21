@@ -216,7 +216,8 @@ def is_android(filename):
     val = None
     with open(filename, "r") as fd:
         f_bytes = fd.read()
-        val = is_android_raw( f_bytes )
+        val = is_android_raw(f_bytes)
+        print "val -> %s, filename -> %s" % (val, filename)
 
     return val
 

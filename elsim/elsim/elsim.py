@@ -384,6 +384,13 @@ class Elsim(object):
         print "\t DELETED:\t", len(self.get_deleted_elements())
         print "\t SKIPPED:\t", len(self.get_skipped_elements())
 
+        print "Elements' details:"
+        print "\t IDENTICAL ELEMENTS:\t", [e.get_info() for e in self.get_identical_elements()][0:100]
+        print "\t SIMILAR ELEMENTS:\t", [e.get_info() for e in self.get_similar_elements()][0:100]
+        print "\t NEW ELEMENTS:\t", [e.get_info() for e in self.get_new_elements()][0:100]
+        print "\t DELETED ELEMENTS:\t", [e.get_info() for e in self.get_deleted_elements()][0:100]
+        print "\t SKIPPED ELEMENTS:\t", [e.get_info() for e in self.get_skipped_elements()][0:100]
+
         #self.sim.show()
 
 ADDED_ELEMENTS = "added elements"

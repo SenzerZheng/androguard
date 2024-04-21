@@ -180,6 +180,7 @@ def main(options, arguments):
         print "Androsim version %s" % androconf.ANDROGUARD_VERSION
 
 if __name__ == "__main__":
+    # Similarity reference document: https://blog.csdn.net/qq_42103091/article/details/106467810
     parser = OptionParser()
     for option in options:
         param = option['name']
